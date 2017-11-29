@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/adddevice_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.7"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/twentyDp"
+        >
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/tv_device_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fortyDp"
+            android:layout_marginRight="@dimen/fortyDp"
+            android:layout_marginTop="@dimen/twentyDp"
+            android:gravity="center"
+            android:textColor="@color/black_text"
+            app:customTextSize="33"/>
+
+        <ImageView
+            android:id="@+id/iv_device_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="@dimen/twentyDp"
+        android:paddingTop="@dimen/twentyDp"
+        >
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/reset_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fiftentDp"
+            android:background="@drawable/main_color_storke_selector"
+            android:gravity="center"
+            android:padding="@dimen/fiftentDp"
+            android:text="@string/settingResetSuccess"
+            android:textColor="@color/main_color"
+            custom:customTextSize="33"/>
+    </LinearLayout>
+</LinearLayout>

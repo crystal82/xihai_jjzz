@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_corners_10"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/animImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/device_connet_icon"
+        />
+    <ImageView
+        android:id="@+id/connectStateTag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/connect_ok_icon"
+        />
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/connectStateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:gravity="center"
+        android:text="@string/settingConnecting"
+        android:textColor="@color/main_color"
+        custom:customTextSize="75" />
+    <LinearLayout
+        android:id="@+id/noLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"
+        >
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设备号："
+            android:textColor="@color/gray_text"
+            custom:customTextSize="38" />
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/deviceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1456 56156 1561"
+            android:textColor="@color/black_text"
+            custom:customTextSize="38" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/tenDp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"
+        >
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设备名："
+            android:textColor="@color/gray_text"
+            custom:customTextSize="38" />
+        <EditText
+            android:id="@+id/deviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="芯海智能插座"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="@dimen/fiveDp"
+            android:paddingBottom="@dimen/fiveDp"
+            android:background="@drawable/main_color_corners_2_selector"
+            android:maxWidth="200dp"
+            android:textColor="@color/black_text"/>
+    </LinearLayout>
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:padding="@dimen/twentyDp"
+        android:background="@drawable/checkcolor_bottom_corners_10"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:text="@string/settingConnectingHint"
+        android:textColor="@color/white"
+        custom:customTextSize="35" />
+
+
+</LinearLayout>

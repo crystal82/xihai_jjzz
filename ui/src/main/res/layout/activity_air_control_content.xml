@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@android:color/white"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        >
+        <com.chipsea.view.AriStateView
+            android:id="@+id/modelProgressView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/valueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/tValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28"
+            android:textColor="@color/air_state_cold"
+            custom:customTextSize="155"
+            custom:customTypeface="CONDM"
+            />
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/modelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/air_cold_icon"
+            android:text="@string/air_model_cold"
+            android:gravity="center"
+            custom:customTextSize="28"
+            android:textColor="@color/air_state_cold"
+            />
+        </LinearLayout>
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/offText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/air_off_text"
+            android:layout_centerInParent="true"
+            android:textColor="@color/air_state_off"
+            custom:customTextSize="65"
+            custom:customTypeface="CONDM"
+            />
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/unitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:visibility="gone"
+            android:textColor="@color/air_state_cold"
+            custom:customTextSize="38"
+            android:layout_toRightOf="@+id/valueLayout"
+            android:layout_alignTop="@+id/valueLayout"
+            android:layout_marginTop="@dimen/fiftentDp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/modelImg"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/state_cold" />
+</RelativeLayout>

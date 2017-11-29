@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_color"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:paddingTop="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bottom_stroke_line_bg"
+            android:padding="@dimen/tenDp">
+
+            <com.chipsea.view.edit.CustomEditText
+                android:id="@+id/login_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editDp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:hint="@string/loginPhoneHint"
+                android:padding="@dimen/tenDp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/main_color_gray"
+                custom:customTextSize="33"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tenDp"
+            android:background="@drawable/login_bottom_stroke_line_bg"
+            android:padding="@dimen/tenDp">
+
+            <com.chipsea.view.edit.CustomEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editDp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:hint="@string/loginPasswordHint2"
+                android:padding="@dimen/tenDp"
+                android:password="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/main_color_gray"
+                custom:customTextSize="33"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <CheckBox
+                android:id="@+id/cbLaws"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/private_selecter"
+                android:button="@null"/>
+        </RelativeLayout>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirtyDp"
+            android:background="@drawable/login_bto_bg_selector"
+            android:gravity="center"
+            android:padding="@dimen/tenDp"
+            android:text="@string/login"
+            android:textColor="@color/main_color"
+            custom:customTextSize="33"/>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/tenDp"
+            android:text="@string/loginForgetPassword"
+            android:textColor="@color/main_color_gray"
+            custom:customTextSize="33"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdPartLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/thirtyDp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/gray_text"/>
+
+            <com.chipsea.view.text.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:text="@string/loginThirdLogin"
+                android:textColor="@color/main_color_gray"
+                custom:customTextSize="28"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="@color/gray_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/thirtyDp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/qq_selecter"
+                />
+
+            <ImageView
+                android:id="@+id/wechat_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wechat_selecter"/>
+
+            <ImageView
+                android:id="@+id/sina_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sina_selecter"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

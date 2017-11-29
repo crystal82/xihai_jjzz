@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="share_img">238dp</dimen>
+    <dimen name="title_bar_height">56dp</dimen>
+
+    <!-- barcode -->
+    <dimen name="barcode_cross_length">54dp</dimen>
+    <dimen name="barcode_cross_width">1.3dp</dimen>
+</resources>

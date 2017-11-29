@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.bingoogolapple.swipeitemlayout.BGASwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_bottom_stroke_line_selector"
+    custom:bga_sil_bottomMode="pullOut"
+    custom:bga_sil_swipeDirection="left"
+    >
+
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/timedelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#Ed4242"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        custom:customTextSize="38"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/white_bottom_stroke_line_selector"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp">
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/stateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/timeText"
+            android:text="@string/timingOpenTime"
+            android:textColor="@color/black_text"
+            custom:customTextSize="25"
+            custom:customTypeface="PROR"
+            />
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="08:45"
+            android:textColor="@color/black_text"
+            custom:customTextSize="40"
+            custom:customTypeface="PROR"
+            />
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/weekText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timeText"
+            android:maxLines="1"
+            android:text="周一,周二"
+            android:textColor="@color/black_text"
+            custom:customTextSize="25"
+            custom:customTypeface="PROR"
+            />
+
+        <ToggleButton
+            android:id="@+id/stateBto"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:button="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""/>
+
+    </RelativeLayout>
+</cn.bingoogolapple.swipeitemlayout.BGASwipeItemLayout>

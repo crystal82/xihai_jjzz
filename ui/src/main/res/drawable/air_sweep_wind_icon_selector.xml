@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/air_sweep_wind_normal" android:state_enabled="false"/>
+    <!-- pressed -->
+    <item android:drawable="@mipmap/air_sweep_wind_press"/>
+    <!-- default -->
+</selector>

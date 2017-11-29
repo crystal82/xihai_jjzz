@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/height_cancleView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/gray_bg"
+            android:paddingLeft="@dimen/tenDp"
+            android:paddingRight="@dimen/tenDp">
+
+            <com.chipsea.view.text.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timingCustom"
+                android:textColor="@color/gray_text"
+                custom:customTextSize="35"
+                custom:customTypeface="LTEX" />
+
+            <ImageView
+                android:id="@+id/button_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/tenDp"
+                android:src="@mipmap/edit_close" />
+
+            <ImageView
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:padding="@dimen/tenDp"
+                android:src="@mipmap/edit_ok" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none"
+            android:paddingTop="@dimen/fiftentDp"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

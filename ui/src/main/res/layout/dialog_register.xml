@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_corners_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/twentyDp">
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingResigterAccountHint"
+            android:layout_centerInParent="true"
+            android:textColor="@color/main_color"
+            custom:customTextSize="40" />
+
+        <ImageView
+            android:id="@+id/closeImg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="@dimen/fiveDp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/gray_close_icon"
+            android:background="@drawable/white_click_selector"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/maincolor_bottom_corners_10"
+        android:paddingBottom="40dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_bottom_stroke_line_bg"
+                android:padding="@dimen/tenDp">
+
+                <com.chipsea.view.edit.CustomEditText
+                    android:id="@+id/register_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/loginPhoneHint"
+                    android:textColorHint="@color/main_color_gray"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/tenDp"
+                    custom:customTextSize="33"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:background="@drawable/login_bottom_stroke_line_bg"
+                android:padding="@dimen/tenDp">
+
+                <com.chipsea.view.edit.CustomEditText
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/loginPasswordHint"
+                    android:textColorHint="@color/main_color_gray"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/tenDp"
+                    android:password="true"
+                    custom:customTextSize="33" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:background="@drawable/login_bottom_stroke_line_bg"
+                android:padding="@dimen/tenDp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <com.chipsea.view.edit.CustomEditText
+                    android:id="@+id/register_verification_code"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/loginVerifHind"
+                    android:textColorHint="@color/main_color_gray"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/tenDp"
+                    custom:customTextSize="33" />
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/register_get_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_get_verif_bg_selector"
+                    android:gravity="center"
+                    android:padding="@dimen/tenDp"
+                    android:text="@string/loginGetVerif"
+                    android:minWidth="120dp"
+                    android:textColor="@color/white"
+                    custom:customTextSize="33" />
+            </LinearLayout>
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/thirtyDp"
+                android:background="@drawable/login_bto_bg_selector"
+                android:gravity="center"
+                android:padding="@dimen/fiftentDp"
+                android:text="@string/register"
+                android:textColor="@color/main_color"
+                custom:customTextSize="33" />
+
+            <com.chipsea.view.text.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/tenDp"
+                android:text="@string/loginRegisterAgreementHint"
+                android:textColor="@color/main_color_gray"
+                custom:customTextSize="28"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

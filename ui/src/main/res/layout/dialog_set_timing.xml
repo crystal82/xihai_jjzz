@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/height_cancleView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/tenDp"
+            android:paddingRight="@dimen/tenDp"
+            android:background="@color/gray_bg"
+            >
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/timingCustom"
+                custom:customTypeface="LTEX"
+                custom:customTextSize="35"
+                android:textColor="@color/gray_text" />
+            <ImageView
+                android:id="@+id/button_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/edit_close"
+                android:padding="@dimen/tenDp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageView
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:padding="@dimen/tenDp"
+                android:src="@mipmap/edit_ok" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                <com.chipsea.view.wheel.WheelView
+                    android:id="@+id/hourWheelView"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    custom:ShadowsColor="@android:color/white"
+                    />
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/hourText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timingHour"
+                    android:layout_toRightOf="@+id/hourWheelView"
+                    custom:customTypeface="LTEX"
+                    custom:customTextSize="33"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray_text" />
+
+                <com.chipsea.view.wheel.WheelView
+                    android:id="@+id/minWheelView"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/hourText"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:background="@android:color/transparent"
+                    custom:ShadowsColor="@android:color/white" />
+                <com.chipsea.view.text.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/timingMin"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_toRightOf="@+id/minWheelView"
+                    custom:customTextSize="33"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray_text" />
+                </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:background="@drawable/gray_stroke"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

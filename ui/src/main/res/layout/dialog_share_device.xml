@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_corners_10"
+    android:paddingTop="@dimen/thirtyDp"
+    android:orientation="vertical">
+
+    <com.chipsea.view.edit.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentyDp"
+        android:padding="@dimen/fiftentDp"
+        android:background="@drawable/gray_stroke_corners_50"
+        android:gravity="center"
+        android:hint="@string/loginPhoneHint"
+        android:textColor="#B2B2B2"
+        custom:customTextSize="38" />
+
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/connectStateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyDp"
+        android:layout_marginRight="@dimen/twentyDp"
+        android:gravity="center"
+        android:text="@string/settingShareFriendHint"
+        android:textColor="@color/black_text"
+        custom:customTextSize="33" />
+
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirtyDp"
+        android:padding="@dimen/twentyDp"
+        android:background="@drawable/checkcolor_bottom_corners_10"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:text="@string/sure"
+        android:textColor="@color/main_color"
+        custom:customTextSize="35" />
+
+
+</LinearLayout>

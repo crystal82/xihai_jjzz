@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/timingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/white_bottom_stroke_line_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/fiftentDp">
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/timingTimeSetting"
+            android:textColor="@color/black_text"
+            custom:customTextSize="38"/>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="28:15"
+            android:textColor="@color/main_color"
+            custom:customTextSize="38"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tenDp"
+            android:src="@mipmap/more_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/fiftentDp">
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/timingStateChoose"
+            android:textColor="@color/black_text"
+            custom:customTextSize="38"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkcolor_stroke_corners_50"
+            android:orientation="horizontal"
+            >
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/openBto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkcolor_left_corners_50"
+                android:paddingBottom="@dimen/tenDp"
+                android:paddingLeft="@dimen/fiftentDp"
+                android:paddingRight="@dimen/fiftentDp"
+                android:paddingTop="@dimen/tenDp"
+                android:text="@string/timingOpen"
+                android:textColor="@color/white"
+                custom:customTextSize="33"
+                />
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/closeBto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tenDp"
+                android:paddingLeft="@dimen/fiftentDp"
+                android:paddingRight="@dimen/fiftentDp"
+                android:paddingTop="@dimen/tenDp"
+                android:text="@string/timingClose"
+                android:textColor="@color/main_color"
+                custom:customTextSize="33"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/light_ll"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/fiftentDp"
+        android:visibility="gone">
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lightStateChoose"
+            android:textColor="@color/black_text"
+            custom:customTextSize="38"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkcolor_stroke_corners_50"
+            android:orientation="horizontal"
+            >
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/lightOpenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkcolor_left_corners_50"
+                android:paddingBottom="@dimen/tenDp"
+                android:paddingLeft="@dimen/fiftentDp"
+                android:paddingRight="@dimen/fiftentDp"
+                android:paddingTop="@dimen/tenDp"
+                android:text="@string/timingOpen"
+                android:textColor="@color/white"
+                custom:customTextSize="33"
+                />
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/lightCloseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/tenDp"
+                android:paddingLeft="@dimen/fiftentDp"
+                android:paddingRight="@dimen/fiftentDp"
+                android:paddingTop="@dimen/tenDp"
+                android:text="@string/timingClose"
+                android:textColor="@color/main_color"
+                custom:customTextSize="33"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fiftentDp"
+        android:text="@string/timingRepeatRound"
+        android:textColor="@color/black_text"
+        android:textSize="15sp"
+        />
+</LinearLayout>

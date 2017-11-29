@@ -1,0 +1,62 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#3A3A3F"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/firstRb"
+                style="@style/setting_tab_style"
+                android:drawableTop="@drawable/setting_first_selector"
+                android:text="@string/settingFirstPage" />
+           <RadioButton
+                android:id="@+id/deviceRb"
+                style="@style/setting_tab_style"
+                android:drawableTop="@drawable/setting_device_selector"
+                android:text="@string/settingDevice" />
+            <RadioButton
+                android:id="@+id/accountRb"
+                style="@style/setting_tab_style"
+                android:drawableTop="@drawable/setting_account_selector"
+                android:text="@string/settingAccount" />
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/agreementRb"-->
+                <!--style="@style/setting_tab_style"-->
+                <!--android:drawableTop="@drawable/setting_agreement_selector"-->
+                <!--android:text="@string/settingAgreement" />-->
+
+            <!--<RadioButton
+                android:id="@+id/feekbackRb"
+                style="@style/setting_tab_style"
+                android:drawableTop="@drawable/setting_feedback_selector"
+                android:text="@string/settingFeedback" />-->
+        </RadioGroup>
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

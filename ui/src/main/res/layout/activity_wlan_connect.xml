@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:background="@mipmap/connet_wifi_bg"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wifi_icon"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/tenDp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.43"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp"
+        android:paddingTop="30dp"
+        >
+        <LinearLayout
+            android:id="@+id/my_registe_panel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="@dimen/fiftentDp"
+            android:background="@drawable/white_solid_bottom_stroke_line_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/conn_wlan_ssid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:layout_marginLeft="@dimen/tenDp"
+                android:textColor="@color/black_text"
+                android:gravity="center"
+                custom:customTextSize= "30"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/check_down_icon"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/tenDp"
+            android:layout_width="match_parent"
+            android:padding="@dimen/tenDp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_solid_bottom_stroke_line_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/conn_wlan_pwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/settingWifiPasswrodHint"
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray_text"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cbLaws"
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/private_selecter"
+                android:button="@null" />
+        </LinearLayout>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/conn_wlan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/fiftentDp"
+            android:background="@drawable/main_color_storke_selector"
+            android:gravity="center"
+            android:text="@string/settingNext"
+            android:textColor="@color/main_color"
+            custom:customTextSize="33" />
+    </LinearLayout>
+</LinearLayout>

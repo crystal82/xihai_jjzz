@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- basic-->
+    <color name="adddevice_bg">#F3F3F3</color>
+    <color name="gray_bg">#F1F0F6</color>
+    <color name="gray_text">#969696</color>
+    <color name="white_line_color">#F3F2F6</color>
+    <color name="maincolor_line_color">#464775</color>
+    <color name="black_text">#3A3843</color>
+    <color name="black_weak_text">#787878</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="ban_transparent">#50000000</color>
+    <color name="white_press">#eeeeee</color>
+    <color name="switch_no_check">#C8C8C8</color>
+    <color name="alert_blue">#2db4e3</color>
+    <color name="black">#000</color>
+    <color name="line_gray">#c7c7c7</color>
+    <color name="transparent_half">#88000000</color>
+
+    <!--main-->
+    <color name="main_color">#59AAAB</color>
+    <color name="main_color_press">#6CB4B3</color>
+    <color name="main_color_gray">#85BCBB</color>
+    <color name="main_tab_text_color">#808082</color>
+    <color name="main_swich_off_bg">#646464</color>
+    <color name="main_state_offline">#C9C9C9</color>
+    <color name="main_state_online">#59AAAB</color>
+    <!--Statistics-->
+    <color name="statistics_yinColor">#DAECEC</color>
+    <color name="statistics_textColor">#A0A0A0</color>
+    <!--login-->
+    <color name="login_agreementColor">#8A8DA6</color>
+
+    <!--setting-->
+    <color name="setting_bindQQColor">#23B8E2</color>
+    <color name="setting_bindSinaColor">#FF7701</color>
+    <color name="setting_sinaPressColor">#FF6601</color>
+    <color name="setting_bindWechatColor">#4FC138</color>
+    <color name="setting_wechatPressColor">#009000</color>
+    <!--air-->
+    <color name="air_state_off">#A0A0A0</color>
+    <color name="air_state_auto">#6FBEE7</color>
+    <color name="air_state_hot">#F5B55E</color>
+    <color name="air_state_cold">#50D2D2</color>
+    <color name="air_state_wet">#8DD764</color>
+    <color name="air_state_wind">#A590D1</color>
+
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_laser">#ff8BC34A</color>
+    <color name="viewfinder_mask">#7f000000</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_corners_10"
+    android:paddingBottom="@dimen/twentyDp"
+    android:paddingTop="@dimen/twentyDp"
+    android:paddingLeft="@dimen/thirtyDp"
+    android:paddingRight="@dimen/thirtyDp"
+    android:orientation="vertical">
+    <com.chipsea.view.text.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twentyDp"
+        android:text="@string/air_matching_select_tip"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_text"
+        custom:customTextSize="35"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/resetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/air_restart_match"
+        android:paddingLeft="@dimen/thirtyDp"
+        android:textColor="@color/main_color"
+        android:paddingRight="@dimen/thirtyDp"
+        android:paddingTop="@dimen/tenDp"
+        android:paddingBottom="@dimen/tenDp"
+        android:layout_gravity="center_horizontal"
+        custom:customTextSize="38"
+        android:background="@drawable/main_color_storke_selector"
+        />
+
+</LinearLayout>

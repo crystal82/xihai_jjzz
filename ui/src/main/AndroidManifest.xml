@@ -1,0 +1,200 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chipsea.ui">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 自动聚焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/sliding_translucent"
+            />
+        <activity
+            android:name=".activity.GosZxingDeviceSharingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.DeviceTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.ControlSocketActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.ControlLightActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.StatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.StatDetalisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/sliding_translucent"/>
+
+        <activity
+            android:name=".activity.SearchDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.AddDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+
+        <activity
+            android:name=".activity.WLANConnectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.DeviceConnectSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.TimingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.LiencesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.AddTimingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".activity.CountDownActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name=".photoUtils.view.CirImageAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent">
+        </activity>
+
+        <activity
+            android:name=".activity.ManagerDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+        <activity
+            android:name="zxing.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/windowIsTranslucent_translucent"
+            />
+
+
+
+        <receiver android:name=".receiver.CodesDownloadReceiver">
+            <intent-filter>
+                <!-- 配置 点击通知 和 下载完成 两个 action -->
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"/>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.chipsea.smarthome.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

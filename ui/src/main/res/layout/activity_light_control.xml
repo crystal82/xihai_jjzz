@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/rootLayout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/black"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.96"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fiftentDp">
+
+        <ImageView
+            android:id="@+id/backImag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fiftentDp"
+            android:paddingLeft="@dimen/twentyDp"
+            android:paddingRight="@dimen/fiftentDp"
+            android:paddingTop="@dimen/twentyDp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/left_icon"
+            />
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/twentyDp"
+            android:text="@string/device2_light"
+            android:textColor="@color/white"
+            custom:customTextSize="38"/>
+
+        <ImageView
+            android:id="@+id/swichImage"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/control_light_off"/>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/swichStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mainSwitchOff"
+            android:textColor="@color/white"
+            custom:customTextSize="38"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/fortyDp"
+        android:layout_marginRight="@dimen/fortyDp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textSize="16sp"
+            android:text="@string/light_txt"
+            android:textColor="@color/white"/>
+        <SeekBar
+            android:id="@+id/sb_light"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progressDrawable="@drawable/bright_progressbar"
+            android:thumb="@drawable/bright_thumb"/>
+
+        <TextView
+            android:text="1"
+            android:id="@+id/tv_light_num"
+            android:textSize="16sp"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/fiftyDp"
+        android:paddingRight="@dimen/fiftyDp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/light_swichBto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/wake_up_off"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:text="@string/mainLightSwitch"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/timingBto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/control_light_clock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:text="@string/mainTiming"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

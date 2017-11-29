@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.96"
+        android:background="@mipmap/swich_off_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/fiftentDp">
+
+        <ImageView
+            android:id="@+id/backImag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/fiftentDp"
+            android:paddingLeft="@dimen/twentyDp"
+            android:paddingRight="@dimen/fiftentDp"
+            android:paddingTop="@dimen/twentyDp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/left_icon"
+            />
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/twentyDp"
+            android:text="@string/device1_socket"
+            android:textColor="@color/white"
+            custom:customTextSize="38"/>
+
+        <ImageView
+            android:id="@+id/airControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="@dimen/fiftentDp"
+            android:paddingLeft="@dimen/twentyDp"
+            android:paddingRight="@dimen/fiftentDp"
+            android:paddingTop="@dimen/twentyDp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/air_control_icon"
+            android:visibility="gone"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/rippleImage"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:src="@mipmap/swich_ripple"/>
+
+            <ImageView
+                android:id="@+id/swichImage"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:src="@mipmap/swich_off_icon"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/openLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/swichStatusText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/fiveDp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="1px"
+                android:background="@color/gray_text"/>
+
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/swichPowerConsumptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/tenDp"
+                android:layout_marginRight="@dimen/tenDp"
+                android:text="@string/statisticsPower"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                custom:customTextSize="30"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="1px"
+                android:background="@color/gray_text"/>
+        </LinearLayout>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/swichStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mainSwitchOff"
+            android:textColor="@color/white"
+            custom:customTextSize="38"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/fiftyDp"
+        android:paddingRight="@dimen/fiftyDp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/swichBto"
+                style="@style/main_tab_bto"
+                android:src="@mipmap/dynamic_default_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:text="@string/mainSwitch"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/timingBto"
+                style="@style/main_tab_bto"
+                android:src="@mipmap/find_default_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:text="@string/mainTiming"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/statBto"
+                style="@style/main_tab_bto"
+                android:src="@mipmap/trend_default_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:text="@string/mainStatistics"
+                android:textColor="@color/main_tab_text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

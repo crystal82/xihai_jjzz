@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_share_buttom_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/share_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:listSelector="@color/transparent"
+        android:verticalSpacing="30dp"
+        >
+
+    </GridView>
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/share_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textColor="@color/black_text"
+        custom:customTextSize="34"
+        custom:customTypeface="LTEX"
+        android:gravity="center"
+        android:background="@drawable/white_click_selector"
+        android:padding="16dp"
+        />
+</LinearLayout>

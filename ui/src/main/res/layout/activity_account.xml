@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <com.chipsea.view.CircleImageView
+                android:id="@+id/my_head_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@mipmap/role_head_default"
+                app:civ_border_color="@color/main_color_press"
+                app:civ_border_width="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tenDp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:visibility="gone"
+                    android:id="@+id/my_nick_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/setting_edit_icon"
+                    android:drawablePadding="@dimen/tenDp"
+                    android:text="天才安妮微IE"
+                    android:textColor="@color/white"
+                    app:customTextSize="33"
+                    />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/fiftentDp"
+                    android:layout_marginRight="@dimen/fiftentDp"
+                    android:background="@color/gray_text"
+                    />
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/my_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    app:customTextSize="30"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.42"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/my_registe_panel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/my_registe_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/settingResigterAccountHint"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="30"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pwd_change_panel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/my_change_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/settingPassword"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="33"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_echo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/tv_echo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/user_echo"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="33"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_language"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/tv_set_language"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/set_language"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="33"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_idea"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp"
+                >
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/tv_idea"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/send_idea"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="33"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_about"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp">
+
+                <com.chipsea.view.text.CustomTextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/tenDp"
+                    android:layout_weight="1"
+                    android:text="@string/about"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="33"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/more_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_bottom_stroke_line_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/fiftentDp">
+
+                <com.chipsea.view.text.CustomTextView
+                    android:gravity="center"
+                    android:id="@+id/my_logout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/settingLogOut"
+                    android:textColor="@color/black_text"
+                    app:customTextSize="36"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/thirdPartPanel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.6"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/fiftentDp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/settingThirdBind"
+                    android:textColor="@color/black_text"
+                    android:textSize="13sp"/>
+
+                <include layout="@layout/setting_third_login_layout"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

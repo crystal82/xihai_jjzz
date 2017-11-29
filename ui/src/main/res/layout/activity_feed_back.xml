@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F5"
+    android:padding="20dp"
+     >
+    <com.chipsea.view.edit.CustomEditText
+        android:id="@+id/feed_back_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@android:color/white"
+        android:gravity="top|left"
+        android:padding="10dp"
+        android:textColor="@color/black_text"
+        custom:customTextSize="34"
+        custom:customTypeface="LTEX"
+        android:hint="@string/settingFeedbackTip"
+        android:textCursorDrawable="@null"
+        android:textColorHint="@color/gray_text"
+        />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        />
+    
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/feed_back_send"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/settingFeedback"
+        android:textColor="@android:color/white"
+        custom:customTextSize="36"
+        custom:customTypeface="LTEX"
+        android:gravity="center"
+        android:background="@drawable/main_color_corners_10_selector"
+        android:layout_marginLeft="@dimen/tenDp"
+        android:layout_marginRight="@dimen/tenDp"
+        />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        />
+</LinearLayout>

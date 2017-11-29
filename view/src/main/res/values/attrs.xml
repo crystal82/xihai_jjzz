@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="CustomTextView">
+        <attr name="customTextSize" format="integer" />
+        <attr name="customClickBackgound" format="boolean" />
+        <attr name="customTextInvalid" format="boolean" />
+        <attr name="customTextPressedColor" format="color" />
+        <attr name="customTypeface">
+            <enum name="EX" value="0"></enum>
+            <enum name="HVCN" value="1"></enum>
+            <enum name="LTEX" value="2"></enum>
+            <enum name="LT" value="3"></enum>
+            <enum name="CONDL" value="4"></enum>
+            <enum name="CONDM" value="5"></enum>
+            <enum name="PROL" value="6"></enum>
+            <enum name="PROR" value="7"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--stat-->
+    <declare-styleable name="StutTrendBaseView">
+        <attr name="xSesion" format="integer"/>
+        <attr name="pointColor" format="color"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="yinColor" format="color"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShowPercentView">
+        <attr name="percentLineColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pEditTextColor" format="color" />
+        <attr name="pEditTextSize" format="integer" />
+        <attr name="pEditDrawable" format="reference" />
+        <attr name="pEditDrawablePadding" format="dimension" />
+        <attr name="pEdittextHint" format="string" />
+        <attr name="pEdittextColorHint" format="color" />
+        <attr name="pCheckable" format="boolean" />
+        <attr name="pEditCheckDrawable" format="reference" />
+        <attr name="pEditTypeface">
+            <enum name="EX" value="0"></enum>
+            <enum name="HVCN" value="1"></enum>
+            <enum name="LTEX" value="2"></enum>
+            <enum name="LT" value="3"></enum>
+            <enum name="CONDL" value="4"></enum>
+            <enum name="CONDM" value="5"></enum>
+            <enum name="PROL" value="6"></enum>
+            <enum name="PROR" value="7"></enum>
+        </attr>
+        <attr name="pEditInputType">
+            <enum name="text" value="0"></enum>
+            <enum name="password" value="1"></enum>
+            <enum name="number" value="2"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

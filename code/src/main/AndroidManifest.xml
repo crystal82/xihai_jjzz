@@ -1,0 +1,15 @@
+<manifest package="com.chipsea.code"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- 访问网络. 某些位置信息需要从网络服务器获取 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true">
+        <meta-data android:name="TencentMapSDK" android:value="GXSBZ-MRCRG-T3NQU-IKW25-CK556-4JBA4" />
+    </application>
+
+</manifest>

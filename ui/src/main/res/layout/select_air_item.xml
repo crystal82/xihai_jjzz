@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/match_air_corners_5_selector"
+    android:paddingTop="@dimen/tenDp"
+    android:paddingBottom="@dimen/tenDp"
+    android:paddingLeft="@dimen/thirtyDp"
+    android:paddingRight="@dimen/thirtyDp"
+    android:id="@+id/itemLayout"
+    >
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/airBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="奥克斯"
+        android:textColor="@drawable/air_match_brand_text_selector"
+        android:layout_gravity="center_horizontal"
+        custom:customTextSize="35"
+        />
+    <com.chipsea.view.text.MarqueeTextView
+        android:id="@+id/cateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kG133/KO45"
+        android:layout_marginTop="@dimen/fiveDp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@drawable/air_match_text_selector"
+        custom:customTextSize="28"
+        />
+</LinearLayout>

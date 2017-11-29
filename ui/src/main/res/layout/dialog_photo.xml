@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_corners_10"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.chipsea.view.text.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingUpdateHeader"
+            android:textColor="@color/black_text"
+            app:customTextSize="38"
+            android:layout_gravity="center"
+            app:customTypeface="LTEX"/>
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="right"
+            android:background="@drawable/white_click_selector"
+            android:src="@mipmap/gray_close_icon" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:src="@mipmap/photo_default_dialog_bg" />
+
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/head_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentyDp"
+        android:background="@drawable/photo_bg_selector"
+        android:drawablePadding="@dimen/tenDp"
+        android:drawableStart="@mipmap/camera_press_icon"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/thirtyDp"
+        android:paddingTop="18dp"
+        android:text="@string/settingPhotograph"
+        android:textColor="@color/white"
+        app:customTextSize="34"
+        app:customTypeface="LTEX"
+        />
+
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/head_alum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twentyDp"
+        android:layout_marginRight="@dimen/twentyDp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/gray_stroke_corner_50_selector"
+        android:drawablePadding="@dimen/tenDp"
+        android:drawableStart="@mipmap/porfile_normal_icon"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="@dimen/thirtyDp"
+        android:paddingTop="18dp"
+        android:text="@string/settingPhotoAlbumSelect"
+        android:textColor="@color/black_text"
+        app:customTextSize="34"
+        app:customTypeface="LTEX"
+        />
+</LinearLayout>

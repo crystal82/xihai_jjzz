@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="@dimen/fiftentDp"
+        android:background="@drawable/white_bottom_stroke_line_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/deviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black_text"
+            custom:customTextSize="38"
+            />
+    <com.chipsea.view.text.CustomTextView
+        android:id="@+id/deviceNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deviceName"
+        android:layout_weight="1"
+        android:text=""
+        android:layout_marginTop="@dimen/twoDp"
+        android:textColor="@color/gray_text"
+        custom:customTextSize="28"
+        />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/more_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+</RelativeLayout>

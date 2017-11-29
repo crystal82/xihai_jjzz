@@ -1,0 +1,125 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="MyAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/role_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="windowIsTranslucent_translucent">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/MyAnim</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:listDivider">@drawable/divider_bg</item>
+        <item name="android:windowEnableSplitTouch">false</item>//禁用多点触控
+        <item name="android:splitMotionEvents">false</item>//禁用多点触控
+    </style>
+
+    <style name="ButtonBlue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/button_blue_long</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="sliding_translucent">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--    <item name="android:windowTranslucentNavigation">true</item> -->
+        <!--         <item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/MyAnim</item>
+        <!--       <item name="android:colorBackgroundCacheHint">@null</item> -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--      <item name="android:windowAnimationStyle">@android:style/Animation</item> -->
+    </style>
+    <style name="main_tab_bto">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/main_menue_bg_selector</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="stat_text_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/stat_text_selector</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:textColor">@color/main_color</item>
+        <item name="android:layout_marginLeft">@dimen/tenDp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="setting_tab_style">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@drawable/setting_tab_text_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:background">@drawable/setting_tab_bg_selector</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/fiftentDp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">@dimen/fiftentDp</item>
+        <item name="android:drawablePadding">@dimen/twoDp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="stat_tab_style">
+        <item name="android:textSize">17sp</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:padding">@dimen/tenDp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textColor">@drawable/stat_text_selector</item>
+    </style>
+
+    <style name="air_type_bto_style">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/air_type_bg_selecter</item>
+        <item name="android:textColor">@drawable/air_type_text_selector</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:drawablePadding">@dimen/fiveDp</item>
+        <item name="android:layout_marginLeft">@dimen/fiftentDp</item>
+        <item name="android:layout_marginRight">@dimen/fiftentDp</item>
+        <item name="android:paddingTop">@dimen/twentyDp</item>
+        <item name="android:paddingBottom">@dimen/twentyDp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="air_top_icon_style">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black_weak_text</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/fiveDp</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

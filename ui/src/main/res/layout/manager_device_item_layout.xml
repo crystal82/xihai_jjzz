@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/white_bottom_stroke_line_selector"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/tenDp"
+              android:paddingLeft="@dimen/fiftentDp"
+              android:paddingRight="@dimen/fiftentDp"
+              android:paddingTop="@dimen/tenDp">
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/fiveDp"
+        android:paddingLeft="@dimen/tenDp"
+        android:paddingTop="@dimen/fiveDp"
+        android:text="科技"
+        android:textColor="@color/black_text"
+        android:textSize="17sp"
+        />
+
+    <ImageView
+        android:id="@+id/deleteBto"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@mipmap/delete_device_icon"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_language_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_china"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:background="@drawable/dialog_language_select"
+        android:gravity="center"
+        android:padding="@dimen/tenDp"
+        android:text="中文"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp18"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp18"
+        android:layout_marginRight="@dimen/dp18"
+        android:id="@+id/tv_english"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tenDp"
+        android:background="@drawable/dialog_language_select"
+        android:gravity="center"
+        android:padding="@dimen/tenDp"
+        android:text="English"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp18"/>
+
+</LinearLayout>

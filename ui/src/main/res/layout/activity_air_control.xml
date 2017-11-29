@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/air_state_cold"
+    android:id="@+id/bgLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/tenDp"
+        android:layout_weight="1"
+        android:background="@drawable/white_solid_corners_5"
+        android:orientation="vertical"
+        android:padding="@dimen/fiftentDp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <com.chipsea.view.text.CustomTextView
+                style="@style/air_top_icon_style"
+                android:text="@string/air_room_temperature"
+                android:visibility="invisible"
+                android:drawableLeft="@mipmap/air_weatherglass_icon"
+                app:customTextSize="28"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/windSpeedStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/air_wind_state3"
+                android:drawableLeft="@mipmap/air_wind_state_icon2"
+                android:drawablePadding="@dimen/fiveDp"
+                android:textColor="@color/black_weak_text"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/fiftentDp"
+                android:layout_marginRight="@dimen/fiftentDp"
+                app:customTextSize="28"
+                />
+            </LinearLayout>
+            <com.chipsea.view.text.CustomTextView
+                android:id="@+id/sweepWindStat"
+                style="@style/air_top_icon_style"
+                android:text="@string/air_sweep_wind_on"
+                android:drawableLeft="@mipmap/air_sweep_wind_icon"
+                app:customTextSize="28"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/activity_air_control_content"></include>
+
+        <com.chipsea.view.text.CustomTextView
+            android:id="@+id/timingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="@dimen/thirtyDp"
+            android:paddingLeft="@dimen/thirtyDp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/air_timing_tip_corners_50"
+            app:customTextSize="26"
+            android:text="2小时20分后空调将关闭"
+            android:visibility="invisible"
+            android:textColor="@android:color/holo_red_dark"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/twentyDp"
+            android:layout_marginRight="@dimen/twentyDp"
+            android:layout_marginTop="@dimen/fiftentDp"
+            >
+            <ImageButton
+                android:id="@+id/subtractBto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/air_minus_icon"
+                android:background="@drawable/air_add_bg_selecter"
+                />
+            <LinearLayout
+                android:id="@+id/switchBto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/fiftentDp"
+                android:layout_marginRight="@dimen/fiftentDp"
+                android:background="@drawable/air_add_bg_selecter"
+                android:gravity="center"
+                >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/air_off_icon"
+                android:layout_marginRight="@dimen/fiveDp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:background="@null"
+                android:text="@string/air_off"
+                android:textColor="@color/black_weak_text"
+
+                />
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/addBto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@mipmap/air_add_icon"
+                android:background="@drawable/air_add_bg_selecter"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/tenDp"
+        android:paddingLeft="@dimen/fiveDp"
+        android:paddingRight="@dimen/fiveDp"
+        android:paddingTop="@dimen/tenDp">
+
+        <Button
+            android:id="@+id/model_bto"
+            style="@style/air_type_bto_style"
+            android:drawableTop="@drawable/air_model_icon_selector"
+            android:text="@string/air_model" />
+
+        <Button
+            android:id="@+id/sweep_wind_bto"
+            style="@style/air_type_bto_style"
+            android:drawableTop="@drawable/air_sweep_wind_icon_selector"
+            android:text="@string/air_sweep_wind" />
+
+        <Button
+            android:id="@+id/wind_speed_bto"
+            style="@style/air_type_bto_style"
+            android:drawableTop="@drawable/air_wind_speed_icon_selector"
+            android:text="@string/air_wind_speed" />
+
+        <Button
+            android:id="@+id/timing_bto"
+            style="@style/air_type_bto_style"
+            android:drawableTop="@drawable/air_timing_icon_selector"
+            android:visibility="gone"
+            android:text="@string/air_timing" />
+    </LinearLayout>
+</LinearLayout>

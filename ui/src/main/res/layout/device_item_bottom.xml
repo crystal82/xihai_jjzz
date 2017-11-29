@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/thirtyDp"
+    android:layout_marginBottom="@dimen/thirtyDp"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/addDeviceBto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mainAddFacility"
+        android:background="@drawable/main_color_corners_5_selector"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/tenDp"
+        android:paddingBottom="@dimen/tenDp"
+        android:paddingLeft="@dimen/fiftyDp"
+        android:paddingRight="@dimen/fiftyDp"
+        >
+    </TextView>
+</LinearLayout>
+
